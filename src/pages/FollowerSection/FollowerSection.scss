@@ -1,0 +1,12 @@
+@import '../../variables';
+
+.followerSection{
+    width: 100%;
+    grid-column: 9/-1;
+    grid-row:2/4;
+    display: flex;
+    flex-direction: column;
+    @media screen and (max-width:600px) {
+        display: none;
+    }   
+}

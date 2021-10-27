@@ -1,0 +1,19 @@
+@import '../../variables';
+
+.storySection {
+    padding-left: 2rem;
+    grid-column: 1/8;
+    grid-row: 2/3;
+    height: 8rem;
+    width: 100%;
+    border:1px solid $lightgrey;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    &>*:not(:first-child){
+        margin-left: 2rem;
+    }
+    @media screen and (max-width:600px) {
+        grid-column: 1/-1;
+    }  
+}

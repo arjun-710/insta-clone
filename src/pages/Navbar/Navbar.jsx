@@ -27,7 +27,7 @@ const Navbar = () => {
                     <Icon imgpath = {Accessibility} />
                     <Icon imgpath = {Like} />
                     <div className="navbar__icons-profile">
-                        <img src="images/user-1.jpeg" alt="profile pic" />
+                        <img src="images/profile.jpg" alt="profile pic" />
                     </div>
                 </div>
             </div>

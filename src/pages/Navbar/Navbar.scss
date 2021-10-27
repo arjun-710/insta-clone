@@ -1,15 +1,16 @@
 @import '../../variables';
 
 .navbar{
-
+    grid-row: 1/2;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center ;
     height: 7rem;
-
-
-
+    grid-column: 1/-1;
+    position: relative;
+    padding-left:2rem;
+    padding-right: 1rem;
     &__logo{
         margin-top: 0.6rem;
         width: 15.45rem;
@@ -25,8 +26,6 @@
             min-width: 15rem;
             height: 4.75rem;
         }
-
-
     }
 
     &__search{
@@ -48,7 +47,7 @@
                     color: $darkgrey;
                 }
             }
-    }
+        }
     }
     &__icons{
         display: flex;
@@ -62,6 +61,10 @@
             @media screen and (max-width:600px) {
                     width: 3rem;
                     height: 3rem;    
+                }
+                @media screen and (max-width:500px) {
+                    width: 2.5rem;
+                    height: 2.5rem; 
                 }
         }
         &-profile{

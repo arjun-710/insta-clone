@@ -9,9 +9,36 @@
     width: 70%;
     height: 100%;
     margin: 0 auto;
-    @media screen and (max-width:600px) {
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    display: grid;
+    grid-template-columns: repeat(12, minmax(min-content, 10rem));
+    grid-template-rows: 7rem auto auto;
+    &::-webkit-scrollbar{
+        visibility: hidden;
+    }
+    &::-webkit-scrollbar-thumb{
+        visibility: hidden;
+    }
+
+
+    @media screen and (max-width:900px) {
+        width: 90%;
+    }
+
+    @media screen and (max-width:700px) {
         width: 100%;
         padding: 0 2rem;
     }
+    @media screen and (max-width:500px) {
+        padding:0;
+        margin:0;
+        overflow-y: unset;
+    }
 }
 
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}

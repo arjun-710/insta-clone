@@ -1,0 +1,100 @@
+@import '../../variables';
+
+.postContainer{
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    &__profile{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 1rem 0.5rem;
+        width: 100%;
+        &>*:not(:last-child){
+            margin-right: 1.5rem;
+            font-size: 1.75rem;
+        }
+        &>:last-child{
+            margin-right: 1.5rem;
+            margin-left: auto;
+        }
+
+    }
+
+    &__postImage{
+        width: 100%;
+        height:40rem;
+    }
+
+    &__actions{
+        display: flex;
+        flex-direction: row;
+        padding: 1rem 0.5rem;
+        justify-content: flex-end;
+        svg{
+            width: 2.4rem;
+            height: 2.4rem;
+        }
+        svg:not(:last-child){
+            margin: 0 0.5rem;
+        }
+        svg:last-child{
+            margin-left: auto;
+            margin-right: 1.5rem;
+        }
+    }
+
+    &__caption{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items:center;
+        padding: 1rem 0.5rem;
+        width: 100%;
+        h3{
+            font-size: 13px;
+            margin-left: 0.5rem;
+            margin-right: 1rem;
+        }
+        p{
+            font-size: 12px;
+            font-weight: 400;
+        }
+
+    }
+
+    &__comment{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items:center;
+        padding: 1rem 0.5rem;
+        width: 100%;
+        &-text{
+            width: 80%;
+            padding: 0.75rem 2rem;
+            input{
+                outline: none;
+                border: none;
+                width: 100%;
+                &::placeholder{
+                    padding-left: .25rem;
+                    color: $darkgrey;
+                }
+            }
+        }
+        svg{
+            margin-left: 0.5rem;
+        }
+        h2{
+            color: $lightblue;
+        }
+        &>:last-child{
+            margin-left: auto;
+            margin-right: 1.5rem;
+        }
+    }
+}
