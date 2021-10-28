@@ -3,39 +3,30 @@
 .App {
     display: flex;
     flex-direction: column;
-    &__container{
-        &__fakebox{
-            height: .25rem;
-            grid-column: 1/-1;
-            box-shadow: 0px 0px 0px 1px #DEDEDE;
-        }
-    }
+    background-color: #fafafa;
 }
 
 #container {
-    width: 70%;
+    width: 100%;
     height: 100%;
-    margin: 0 auto;
     overflow-y: auto;
     scroll-behavior: smooth;
     display: grid;
-    grid-template-columns: repeat(12, minmax(min-content, 10rem));
+    grid-template-columns:1fr repeat(12, minmax(min-content, 10rem)) 1fr;
     grid-template-rows: 7rem auto auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
     &::-webkit-scrollbar{
-        visibility: hidden;
+        display: none;
     }
-    &::-webkit-scrollbar-thumb{
-        visibility: hidden;
-    }
-
 
     @media screen and (max-width:900px) {
-        width: 90%;
+        width: 100%;
     }
 
     @media screen and (max-width:700px) {
         width: 100%;
-        padding: 0 2rem;
+        padding: 0 1rem;
     }
     @media screen and (max-width:500px) {
         padding:0;

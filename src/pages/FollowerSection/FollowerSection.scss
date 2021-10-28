@@ -1,6 +1,7 @@
 @import '../../variables';
 
 .followerSection{
+    padding-left: 3rem;
     &__text{
         font-size: 1.6rem;
         color: $lightgrey;
@@ -8,7 +9,7 @@
     }
     padding-top: 1.5rem;
     width: 100%;
-    grid-column: 9/-1;
+    grid-column: 9/12;
     grid-row:2/4;
     display: flex;
     flex-direction: column;
