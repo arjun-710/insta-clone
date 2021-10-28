@@ -2,7 +2,7 @@
 
 .followerContainer{
     width: 100%;
-    padding: 1rem 0.5rem;
+    padding: 0.5rem 0.5rem;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -11,12 +11,19 @@
     &__name{
         display: flex;
         flex-direction: column;
-        margin: 0 2rem;
+        padding: 0 1rem;
+        #name{
+            font-size: 1.4rem;
+            font-weight: 600;
+        }
+        font-size: 1.2rem;
     }
 
     &>:last-child{
+        font-size: 1.3rem;
         margin-left: auto;
         color: $lightblue;
+        font-weight: 500;
     }
 
 }

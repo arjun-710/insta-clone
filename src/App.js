@@ -7,7 +7,7 @@ import StorySection from './pages/StorySection/StorySection';
 function App() {
   return (
     <div className="App">
-      <div id="container">
+      <div className="App__container" id="container">
         <Navbar />
         <StorySection />
         <PostSection />

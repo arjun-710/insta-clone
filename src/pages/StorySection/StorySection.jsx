@@ -6,11 +6,30 @@ const StorySection = () => {
     return (
         <>
         <div className="storySection">
-        <Profilepic imgpath="images/user-1.jpeg" imgname="user-1"/>
-        <Profilepic imgpath="images/user-2.jpeg" imgname="user-2"/>
-        <Profilepic imgpath="images/user-3.jpeg" imgname="user-3"/>
-        <Profilepic imgpath="images/user-4.jpeg" imgname="user-4"/>
-        <Profilepic imgpath="images/user-5.jpeg" imgname="user-5"/>
+        <div className="storySection__story">
+            <Profilepic imgpath="images/user-1.jpeg" imgname="user-1"/>
+            <text>Zack</text>
+        </div>
+        <div className="storySection__story">
+            <Profilepic imgpath="images/user-2.jpeg" imgname="user-2"/>
+            <text>Cody</text>
+        </div>
+        <div className="storySection__story">
+            <Profilepic imgpath="images/user-3.jpeg" imgname="user-3"/>
+            <text>Monica</text>
+        </div>
+        <div className="storySection__story">
+            <Profilepic imgpath="images/user-4.jpeg" imgname="user-4"/>
+            <text>Joey</text>
+        </div>
+        <div className="storySection__story">
+            <Profilepic imgpath="images/user-5.jpeg" imgname="user-5"/>
+            <text>Chandler</text>
+        </div>
+        
+        
+        
+        
         </div>
             
         </>

@@ -1,6 +1,12 @@
 @import '../../variables';
 
 .followerSection{
+    &__text{
+        font-size: 1.6rem;
+        color: $lightgrey;
+        padding-bottom: 0.5rem ;
+    }
+    padding-top: 1.5rem;
     width: 100%;
     grid-column: 9/-1;
     grid-row:2/4;

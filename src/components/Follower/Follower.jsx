@@ -9,10 +9,10 @@ const Follower = (props) => {
             <div className="followerContainer">
                 <Profilepic imgpath={props.imgpath} imgname={props.followername}/>
                 <div className="followerContainer__name">
-                    <h2>{props.followername}</h2>
-                    <h3>Follows You</h3>
+                    <p id="name">{props.followername}</p>
+                    <p>Follows You</p>
                 </div>
-                <h2>Follow</h2>
+                <p>Follow</p>
             </div>
         </>
     )
